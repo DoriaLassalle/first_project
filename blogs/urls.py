@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+#continuacion ruta de urls de settings
 urlpatterns=[
     path ('', views.root),
     path ('blogs', views.index),
