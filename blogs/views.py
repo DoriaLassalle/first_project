@@ -15,7 +15,7 @@ def  new(request):
     return HttpResponse(respuesta)
 
 def create(request):
-    return redirect("/")
+    return redirect("/blogs")
 
 def show(request, number):
     respuesta= f"placeholder para mostrar el blog numero: {number}"

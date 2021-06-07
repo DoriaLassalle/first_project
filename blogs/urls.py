@@ -3,12 +3,12 @@ from . import views
 
 #continuacion ruta de urls de settings
 urlpatterns=[
-    path ('', views.root),
-    path ('blogs', views.index),
-    path ('blogs/new', views.new),
-    path ('blogs/create',views.create),
-    path ('blogs/<number>',views.show),
-    path ('blogs/<number>/edit',views.edit),
-    path ('blogs/<number>/delete',views.destroy),
+    #path ('', views.root),
+    path ('', views.index),
+    path ('new', views.new),
+    path ('create',views.create),
+    path ('<number>',views.show),
+    path ('<number>/edit',views.edit),
+    path ('<number>/delete',views.destroy),
     path ('json',views.bonus)
 ]
